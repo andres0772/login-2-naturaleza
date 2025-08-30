@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB DE REGISTRO Y LOGIN</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#">Inicio</a>
+            <a href="#">Acerca de</a>
+            <a href="#">Servicios</a>
+            <a href="#">Contacto</a>
+        </nav>
+        
+        <form action="#" class="search-bar">
+            <input type="text" placeholder="Buscar...">
+            <button type="submit" aria-label="Buscar"><i class='bx bx-search-alt'></i></button>
+        </form>
+    </header>
+    
+    <div class="background"></div>
+    
+    <main class="container">
+        <section class="content">
+            <h2 class="logo"><i class='bx bxl-firebase'></i>CROSS</h2>
+
+            <div class="text-sci">
+                <h2>¡Bienvenidos!<br><span>A Mi Nueva Página</span></h2>
+
+                <p>Lorem ipsum dolor, sit amet consectetur 
+                adipisicing elit. Dolore perferendis ducimus 
+                hic ratione facilis repellat possimus dignissimos?
+                Ad deserunt doloribus quas fugiat, nemo sapiente 
+                voluptatem praesentium quos ipsum officiis odio.</p>
+
+                <div class="social-icons">
+                    <a href="#" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                    <a href="#" aria-label="YouTube"><i class='bx bxl-youtube'></i></a>
+                    <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="logreg-box">
+            <div class="form-box login">
+                <form action="#">
+                    <h2>Inicio</h2>
+
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-envelope'></i></span>
+                        <input type="email" required id="login-email">
+                        <label for="login-email">Correo</label>
+                    </div>
+
+                     <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                        <input type="password" required id="login-password">
+                        <label for="login-password">Contraseña</label>
+                    </div>
+
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Recordar sesión</label>
+                        <a href="#">¿Olvidaste tu contraseña?</a>
+                    </div>
+
+                    <button type="submit" class="btn">Iniciar Sesión</button>
+
+                    <div class="login-register">
+                        <p>¿No tienes una cuenta? <a href="#" class="register-link">Regístrate</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-box register">
+                <form action="#">
+                    <h2>Registro</h2>
+
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-user'></i></span>
+                        <input type="text" required id="register-name">
+                        <label for="register-name">Nombre</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-envelope'></i></span>
+                        <input type="email" required id="register-email">
+                        <label for="register-email">Correo</label>
+                    </div>
+
+                     <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                        <input type="password" required id="register-password">
+                        <label for="register-password">Contraseña</label>
+                    </div>
+
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Acepto los términos y condiciones</label>
+                    </div>
+
+                    <button type="submit" class="btn">Registrarse</button>
+
+                    <div class="login-register">
+                        <p>¿Ya tienes una cuenta? <a href="#" class="login-link">Iniciar Sesión</a></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
